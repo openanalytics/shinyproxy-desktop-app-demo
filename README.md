@@ -20,11 +20,11 @@ The following configuration is all what is needed to run these applications insi
 
 ```yaml
 - id: phaedra
-container-image: openanalytics/shinyproxy-desktop-app-demo:phaedra
-port: 80
+  container-image: openanalytics/shinyproxy-desktop-app-demo:phaedra
+  port: 80
 - id: vsode
-container-image: openanalytics/shinyproxy-desktop-app-demo:vscode
-port: 80
+  container-image: openanalytics/shinyproxy-desktop-app-demo:vscode
+  port: 80
 ```
 
 ## How does this work?
