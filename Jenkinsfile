@@ -10,9 +10,6 @@ pipeline {
         buildDiscarder(logRotator(numToKeepStr: '3'))
     }
 
-    environment {
-    }
-
     stages {
         stage('Build Docker Image') {
             steps {
