@@ -3,7 +3,7 @@
 [Screenshots](#screenshots)
 
 This repository contains two demos of running desktop apps using ShinyProxy.
-The first demo demonstrates running [Phaedra](Phaedra.io) while the second demo show how to run Visual Studio Code.
+The first demo demonstrates running [Phaedra](https://phaedra.io) while the second demo show how to run Visual Studio Code.
 
 We make extensively use of the great [https://github.com/fcwu/docker-ubuntu-vnc-desktop](docker-ubuntu-vnc-desktop) project.
 
