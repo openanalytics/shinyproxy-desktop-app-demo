@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Build Docker Image') {
             steps {
-                sh './build.sh'
+                sh './build_jenkins.sh'
             }
         }
 
