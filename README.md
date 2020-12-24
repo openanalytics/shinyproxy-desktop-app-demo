@@ -1,12 +1,6 @@
 # ShinyProxy Desktop App Demo
 
-
-<p align="center">
-	<img title="Phaedra" width="600px" src=".github/screenshots/phaedra.png"><br>
-	<img title="VS Code" width="600px" src=".github/screenshots/vscode.png">
-</p>
-
-
+[Screenshots](#Screenshots)
 
 This repository contains two demos of running desktop apps using ShinyProxy.
 The first demo demonstrates running [Phaedra](Phaedra.io) while the second demo show how to run Visual Studio Code.
@@ -47,3 +41,10 @@ The [https://github.com/fcwu/docker-ubuntu-vnc-desktop](docker-ubuntu-vnc-deskto
 
 The idea is to have an X server (xvfb), running a desktop environment (LXDE), this is exposed by VNC server (x11vnc) using a web app (nginx/python/vue/noVNC).
 All these processes are managed by supervisor such that it fits in a single Docker container.
+
+## Screenshots
+
+<p align="center">
+	<img title="Phaedra" width="600px" src=".github/screenshots/phaedra.png"><br>
+	<img title="VS Code" width="600px" src=".github/screenshots/vscode.png">
+</p>
