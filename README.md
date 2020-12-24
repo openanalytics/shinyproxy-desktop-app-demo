@@ -12,7 +12,7 @@ We make extensively use of the great [https://github.com/fcwu/docker-ubuntu-vnc-
 In order to build the Docker images, simply execute the `build.sh` script.
 This script first builds two base images (one for Ubuntu 16.04 and one for 20.04).
 Next, it builds `shinyproxy-desktop-app-demo:phaedra` and `shinyproxy-desktop-app-demo:vscode` containing the respective applications.
-You can also simply down the images from [Docker Hub]().
+You can also simply down the images from [Docker Hub](https://hub.docker.com/r/openanalytics/shinyproxy-desktop-app-demo).
 
 ## ShinyProxy configuration
 
@@ -44,7 +44,5 @@ All these processes are managed by supervisor such that it fits in a single Dock
 
 ## Screenshots
 
-<p align="center">
-	<img title="Phaedra" width="600px" src=".github/screenshots/phaedra.png"><br>
-	<img title="VS Code" width="600px" src=".github/screenshots/vscode.png">
-</p>
+![Phaedra](.github/screenshots/phaedra.png)
+![VS Code](.github/screenshots/vscode.png)
