@@ -1,0 +1,36 @@
+diff --git a/Dockerfile.amd64 b/Dockerfile.amd64
+index f36e07d..63d8a1d 100644
+--- a/Dockerfile.amd64
++++ b/Dockerfile.amd64
+@@ -32,17 +32,9 @@ RUN apt update \
+     && apt autoremove -y \
+     && rm -rf /var/lib/apt/lists/*
+
+-RUN apt update \
+-    && apt install -y gpg-agent \
+-    && curl -LO https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
+-    && (dpkg -i ./google-chrome-stable_current_amd64.deb || apt-get install -fy) \
+-    && curl -sSL https://dl.google.com/linux/linux_signing_key.pub | apt-key add \
+-    && rm google-chrome-stable_current_amd64.deb \
+-    && rm -rf /var/lib/apt/lists/*
+-
+ RUN apt update \
+     && apt install -y --no-install-recommends --allow-unauthenticated \
+-        lxde gtk2-engines-murrine gnome-themes-standard gtk2-engines-pixbuf gtk2-engines-murrine arc-theme \
++        lxde gtk2-engines-murrine gnome-themes-standard gtk2-engines-pixbuf gtk2-engines-murrine \
+     && apt autoclean -y \
+     && apt autoremove -y \
+     && rm -rf /var/lib/apt/lists/*
+diff --git a/web/config/index.js b/web/config/index.js
+index 37fabe4..ef10941 100644
+--- a/web/config/index.js
++++ b/web/config/index.js
+@@ -10,7 +10,7 @@ module.exports = {
+
+     // Paths
+     assetsSubDirectory: 'static',
+-    assetsPublicPath: './',
++    assetsPublicPath: '',
+     proxyTable: {
+       '/api': {
+         target: BACKEND,

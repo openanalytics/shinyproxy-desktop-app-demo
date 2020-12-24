@@ -1,0 +1,13 @@
+diff --git a/Dockerfile.amd64 b/Dockerfile.amd64
+index f36e07d..7eae549 100644
+--- a/Dockerfile.amd64
++++ b/Dockerfile.amd64
+@@ -4,7 +4,7 @@
+ # base system
+ ################################################################################
+ 
+-FROM ubuntu:20.04 as system
++FROM ubuntu:16.04 as system
+ 
+ 
+ 
