@@ -4,9 +4,9 @@ set -e
 set -x
 
 cd docker-ubuntu-vnc-desktop
-git apply ../docker-ubuntu-vnc-desktop_web.patch || true
+patch -p1 < ../docker-ubuntu-vnc-desktop_web.patch
 docker build -t shinyproxy-desktop-app-demo-base:20.04 .
-git apply ../docker-ubuntu-vnc-desktop_16.patch || true
+patch -p1 < ../docker-ubuntu-vnc-desktop_16.patch
 docker build -t shinyproxy-desktop-app-demo-base:16.04 .
 cd ..
 
