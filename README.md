@@ -1,6 +1,6 @@
 # ShinyProxy Desktop App Demo
 
-[Screenshots](#Screenshots)
+[Screenshots](#screenshots)
 
 This repository contains two demos of running desktop apps using ShinyProxy.
 The first demo demonstrates running [Phaedra](Phaedra.io) while the second demo show how to run Visual Studio Code.
