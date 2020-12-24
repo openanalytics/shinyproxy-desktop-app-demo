@@ -3,7 +3,7 @@
 set -e
 set -x
 
-git submodule update --init --recursive
+#git submodule update --init --recursive
 
 pushd docker-ubuntu-vnc-desktop
 git apply ../docker-ubuntu-vnc-desktop_web.patch || true
