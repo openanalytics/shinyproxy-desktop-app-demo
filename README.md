@@ -22,7 +22,7 @@ The following configuration is all what is needed to run these applications insi
 - id: phaedra
   container-image: openanalytics/shinyproxy-desktop-app-demo:phaedra
   port: 80
-- id: vsode
+- id: vscode
   container-image: openanalytics/shinyproxy-desktop-app-demo:vscode
   port: 80
 ```
