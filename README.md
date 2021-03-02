@@ -22,9 +22,13 @@ The following configuration is all what is needed to run these applications insi
 - id: phaedra
   container-image: openanalytics/shinyproxy-desktop-app-demo:phaedra
   port: 80
+  container-env:
+    RELATIVE_URL_ROOT: "#{proxySpec.containerSpecs[0].env.get('SHINYPROXY_PUBLIC_PATH')}"
 - id: vscode
   container-image: openanalytics/shinyproxy-desktop-app-demo:vscode
   port: 80
+  container-env:
+    RELATIVE_URL_ROOT: "#{proxySpec.containerSpecs[0].env.get('SHINYPROXY_PUBLIC_PATH')}"
 ```
 
 ## How does this work?
