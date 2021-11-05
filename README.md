@@ -32,13 +32,19 @@ The following configuration is all what is needed to run these applications insi
   port: 80
   websocket-reconnection-mode: None
   container-env:
+    # Use the following line when using ShinyProxy 2.6.0 or later
     RELATIVE_URL_ROOT: "#{proxy.getRuntimeValue('SHINYPROXY_PUBLIC_PATH')}"
+    # Use the following line when using ShinyProxy 2.5.0
+    # RELATIVE_URL_ROOT: "#{proxySpec.containerSpecs[0].env.get('SHINYPROXY_PUBLIC_PATH')}"
 - id: vscode
   container-image: openanalytics/shinyproxy-desktop-app-demo:vscode
   port: 80
   websocket-reconnection-mode: None
   container-env:
+    # Use the following line when using ShinyProxy 2.6.0 or later
     RELATIVE_URL_ROOT: "#{proxy.getRuntimeValue('SHINYPROXY_PUBLIC_PATH')}"
+    # Use the following line when using ShinyProxy 2.5.0
+    # RELATIVE_URL_ROOT: "#{proxySpec.containerSpecs[0].env.get('SHINYPROXY_PUBLIC_PATH')}"
 ```
 
 ## How does this work?
