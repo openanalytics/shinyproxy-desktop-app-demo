@@ -19,7 +19,7 @@ In order to build the Docker images, simply execute the `build.sh` script. This
 script first builds two base images (one for Ubuntu 16.04 and one for 20.04).
 Next, it builds `shinyproxy-desktop-app-demo:phaedra` and
 `shinyproxy-desktop-app-demo:vscode` containing the respective applications. You
-can also simply down the images from [Docker
+can also simply download the images from [Docker
 Hub](https://hub.docker.com/r/openanalytics/shinyproxy-desktop-app-demo).
 
 ## ShinyProxy configuration
